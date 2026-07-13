@@ -1,0 +1,23 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+.env
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDE / System
+.vscode/
+.idea/
+.DS_Store
+
+# Streamlit Cache
+.streamlit/credentials.toml
+
+# Project specific (if any local FAISS index or logs are saved)
+faiss_index/
+*.log

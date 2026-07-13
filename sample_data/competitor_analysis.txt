@@ -1,0 +1,47 @@
+Competitor Analysis: Task Management Apps (2024)
+=================================================
+
+1. Todoist
+---------
+- Market Position: Leading freemium task manager with 30M+ users
+- Strengths: Clean UI, natural language input, cross-platform, Karma points gamification
+- Weaknesses: Limited collaboration in free tier, no built-in calendar view, AI features are premium-only
+- Pricing: Free tier available; Pro at $4/month; Business at $6/user/month
+- Key Differentiator: Natural language task creation ("Buy groceries tomorrow at 5pm #shopping")
+- User Complaints: Recurring tasks are buggy, no offline mode on web, poor Gantt chart support
+
+2. Notion
+---------
+- Market Position: All-in-one workspace, strong with tech teams and startups
+- Strengths: Extremely flexible (databases, wikis, docs), template gallery, API integrations
+- Weaknesses: Steep learning curve, slow on mobile, overwhelming for simple task management
+- Pricing: Free for personal use; Plus at $8/user/month; Business at $15/user/month
+- Key Differentiator: Relational databases allow linking tasks to projects, docs, and wikis
+- User Complaints: Mobile app is sluggish, no native reminders, search is unreliable
+
+3. Asana
+--------
+- Market Position: Enterprise-focused project management
+- Strengths: Multiple views (list, board, timeline, calendar), goals tracking, workload management
+- Weaknesses: Expensive for small teams, complex setup, no time tracking built-in
+- Pricing: Free (up to 15 users); Premium at $10.99/user/month; Business at $24.99/user/month
+- Key Differentiator: Portfolio-level project tracking with dependencies
+- User Complaints: UI feels cluttered, too many features for small projects, slow API
+
+4. TickTick
+-----------
+- Market Position: Rising challenger in personal productivity
+- Strengths: Built-in Pomodoro timer, habit tracker, calendar integration, fast and lightweight
+- Weaknesses: Small team (risk of slow feature development), limited third-party integrations
+- Pricing: Free tier; Premium at $27.99/year
+- Key Differentiator: Combines task management with time management (Pomodoro + calendar)
+- User Complaints: Sync issues occasionally, limited project views in free tier
+
+Common Gaps Across Competitors
+-------------------------------
+- None offer AI-powered schedule optimization out of the box
+- Limited support for academic/student-specific workflows
+- Poor integration with university Learning Management Systems (Canvas, Moodle, Blackboard)
+- No adaptive rescheduling when users fall behind on tasks
+- Accessibility features are inconsistent across platforms
+- Most require paid plans for team collaboration features

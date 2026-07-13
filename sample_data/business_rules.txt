@@ -1,0 +1,57 @@
+Business Rules & Compliance Requirements
+==========================================
+
+Data Handling Rules
+-------------------
+BR-001: All user data must be encrypted at rest using AES-256 encryption
+BR-002: Data in transit must use TLS 1.2 or higher
+BR-003: User passwords must be hashed using bcrypt with a minimum cost factor of 12
+BR-004: Personal data must not be stored longer than 2 years after account deletion
+BR-005: Users must be able to export all their data in a machine-readable format (JSON/CSV)
+BR-006: Backup data must be retained for 30 days and then permanently deleted
+
+Authentication & Access
+------------------------
+BR-010: Multi-factor authentication must be available for all user accounts
+BR-011: Session tokens must expire after 24 hours of inactivity
+BR-012: Failed login attempts must be rate-limited (max 5 per 15 minutes)
+BR-013: OAuth 2.0 must be supported for third-party integrations
+BR-014: Role-based access control (RBAC) must be implemented for team features
+
+Content & Communication
+------------------------
+BR-020: Push notifications must respect user's quiet hours (default: 10 PM - 7 AM)
+BR-021: Email notifications must include an unsubscribe link
+BR-022: All user-generated content must be scannable for prohibited material
+BR-023: System must support content moderation for shared/community features
+
+Performance Requirements
+-------------------------
+BR-030: Page load time must not exceed 3 seconds on 3G networks
+BR-031: API response time must be under 500ms for 95th percentile
+BR-032: System must support 10,000 concurrent users without degradation
+BR-033: Mobile app size must not exceed 50MB
+BR-034: Offline functionality must sync within 30 seconds of reconnection
+
+Accessibility Requirements
+---------------------------
+BR-040: All interfaces must comply with WCAG 2.1 Level AA
+BR-041: Screen reader compatibility must be tested with NVDA and VoiceOver
+BR-042: Color contrast ratios must be at least 4.5:1 for normal text
+BR-043: All interactive elements must be keyboard navigable
+BR-044: Text must be resizable up to 200% without loss of functionality
+
+Monetization Rules
+-------------------
+BR-050: Free tier must remain functional without time limits
+BR-051: Premium features must be clearly marked in the UI
+BR-052: Subscription cancellation must be completable in 3 clicks or fewer
+BR-053: No dark patterns in upgrade prompts
+BR-054: Refund policy: full refund within 7 days of purchase, prorated after
+
+Third-Party Integration Rules
+------------------------------
+BR-060: All third-party APIs must have fallback handling for outages
+BR-061: API keys must never be stored in client-side code
+BR-062: Third-party data sharing requires explicit user consent
+BR-063: Integration health must be monitored with alerts for failures
