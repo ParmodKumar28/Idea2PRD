@@ -47,37 +47,37 @@ User Input (Idea + Users + Domain + Constraints)
             ▼
 ┌─────────────────────────────────────────┐
 │         RAG Pipeline (rag_utils.py)     │
-│  PDF/TXT Parsing → Chunking → FAISS    │
-│  → Similarity Search → Context         │
+│  PDF/TXT Parsing → Chunking → FAISS     │
+│  → Similarity Search → Context          │
 └───────────┬─────────────────────────────┘
             │
             ▼
 ┌─────────────────────────────────────────┐
 │    Multi-Agent Workflow (agents.py)     │
 │                                         │
-│  ┌─────────────┐                       │
+│  ┌─────────────┐                        │
 │  │  Business    │──→ Problem Statement  │
 │  │  Analyst     │   Personas, Pain Pts  │
-│  └──────┬──────┘                       │
+│  └──────┬──────┘                        │
 │         ▼                               │
-│  ┌─────────────┐                       │
+│  ┌─────────────┐                        │
 │  │  Product     │──→ User Stories,      │
 │  │  Manager     │   Requirements, MVP   │
-│  └──────┬──────┘                       │
+│  └──────┬──────┘                        │
 │         ▼                               │
-│  ┌─────────────┐                       │
+│  ┌─────────────┐                        │
 │  │  Risk        │──→ Risks, Gaps,       │
 │  │  Reviewer    │   Clarifying Qs       │
-│  └──────┬──────┘                       │
+│  └──────┬──────┘                        │
 │         ▼                               │
-│  ┌─────────────┐                       │
+│  ┌─────────────┐                        │
 │  │  Compiler    │──→ Final Merged PRD   │
-│  └─────────────┘                       │
+│  └─────────────┘                        │
 └───────────┬─────────────────────────────┘
             │
             ▼
 ┌─────────────────────────────────────────┐
-│     LLM (Gemini 2.0 Flash / GPT-4o)    │
+│     LLM (Gemini 2.0 Flash / GPT-4o)     │
 └─────────────────────────────────────────┘
             │
             ▼
@@ -147,8 +147,6 @@ Idea-prd/
 ---
 
 ## 📸 Screenshots
-
-> *Screenshots to be added after first run*
 
 | Screen | Description |
 |--------|-------------|
