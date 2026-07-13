@@ -132,6 +132,102 @@ st.markdown("""
         color: #cbd5e0;
     }
 
+    /* ── File Uploader Styling ──────────────────────────── */
+    [data-testid="stFileUploader"] {
+        margin-top: 0.5rem;
+    }
+    /* Dropzone area */
+    [data-testid="stFileUploader"] section {
+        background-color: rgba(255, 255, 255, 0.03) !important;
+        border: 1px dashed rgba(255, 255, 255, 0.3) !important;
+        padding: 1rem !important;
+    }
+    /* Make all text in uploader visible */
+    [data-testid="stFileUploader"] small,
+    [data-testid="stFileUploader"] div,
+    [data-testid="stFileUploader"] span {
+        color: #e2e8f0 !important;
+    }
+    /* Uploaded file item */
+    [data-testid="stUploadedFile"] {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        border-radius: 6px !important;
+        color: white !important;
+        margin-top: 0.5rem !important;
+    }
+    [data-testid="stUploadedFile"] svg {
+        fill: white !important;
+        color: white !important;
+    }
+
+    /* ── Parsed Document Expander Styling (Sidebar) ─────── */
+    [data-testid="stSidebar"] [data-testid="stExpander"] {
+        background-color: rgba(255, 255, 255, 0.03) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 8px !important;
+    }
+    [data-testid="stSidebar"] [data-testid="stExpander"] summary p {
+        color: #e2e8f0 !important;
+        font-weight: 600 !important;
+    }
+    [data-testid="stSidebar"] [data-testid="stExpander"] summary svg {
+        fill: #e2e8f0 !important;
+        color: #e2e8f0 !important;
+        display: block !important;
+    }
+    [data-testid="stSidebar"] [data-testid="stText"] {
+        color: #cbd5e0 !important;
+        font-family: inherit !important;
+        white-space: pre-wrap !important;
+        line-height: 1.5 !important;
+        padding: 0.5rem !important;
+        background-color: rgba(0, 0, 0, 0.2) !important;
+        border-radius: 4px !important;
+    }
+    [data-testid="stSidebar"] [data-testid="stCaptionContainer"] {
+        color: #a0aec0 !important;
+    }
+    /* ── Sidebar Expand Button (when closed) ────────────── */
+    [data-testid="collapsedControl"] {
+        background-color: #ffffff !important;
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 8px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+        transition: all 0.2s ease;
+        padding: 0.1rem !important;
+        margin: 0.5rem !important;
+    }
+    [data-testid="collapsedControl"]:hover {
+        background-color: #f7fafc !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    }
+    [data-testid="collapsedControl"] svg {
+        fill: #4a5568 !important;
+        color: #4a5568 !important;
+    }
+
+    /* ── Sidebar Close Button (when open) ───────────────── */
+    [data-testid="stSidebar"] button[kind="header"] {
+        background-color: transparent !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+        border-radius: 6px !important;
+        color: rgba(255, 255, 255, 0.7) !important;
+        transition: all 0.2s ease;
+    }
+    [data-testid="stSidebar"] button[kind="header"]:hover {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        color: #ffffff !important;
+        border-color: rgba(255, 255, 255, 0.3) !important;
+    }
+    [data-testid="stSidebar"] button[kind="header"] svg {
+        display: none !important; /* Hide the Cross (X) */
+    }
+    [data-testid="stSidebar"] button[kind="header"]::after {
+        content: "❮"; /* Good icon instead of Cross */
+        font-size: 1.1rem;
+        font-weight: 700;
+        display: block;
+    }
     /* ── Button Styling ─────────────────────────────────── */
     .stButton > button[kind="primary"] {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -261,10 +357,12 @@ with st.sidebar:
 
     # ── Sample Input Loader ───────────────────────────────
     st.markdown("## 🧪 Sample Inputs")
+    st.markdown('<p style="color: white; font-size: 14px; margin-bottom: 0.25rem;">Load a sample product idea</p>', unsafe_allow_html=True)
     sample_choice = st.selectbox(
         "Load a sample product idea",
         options=["— Select —"] + [s["name"] for s in SAMPLE_INPUTS],
         index=0,
+        label_visibility="collapsed"
     )
 
     if sample_choice != "— Select —":
