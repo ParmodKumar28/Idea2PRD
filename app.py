@@ -651,8 +651,8 @@ if result and result.success:
 st.markdown("---")
 st.markdown(
     "<div style='text-align: center; color: #718096; font-size: 0.85rem; padding: 1rem;'>"
-    "Built with ❤️ for the IIIT LLM Course | "
-    "Powered by LangChain, FAISS, and Gemini/OpenAI"
+    "Built with ❤️ by Parmod Kumar for the IIIT LLM Course | "
+    "Powered by LangChain, FAISS, and Gemini/OpenAI/Groq"
     "</div>",
     unsafe_allow_html=True,
 )

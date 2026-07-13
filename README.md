@@ -232,4 +232,4 @@ This project is created for academic purposes as part of the IIIT LLM Course.
 
 ---
 
-*Built with ❤️ using LangChain, FAISS, Streamlit, and Gemini/OpenAI*
+*Built with ❤️ by Parmod Kumar using LangChain, FAISS, Streamlit, and Gemini/OpenAI/groq*
