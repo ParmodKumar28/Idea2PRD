@@ -106,40 +106,40 @@ Sequential Agent Pipeline:
 
   ┌─────────────────────────────────────────────────────────┐
   │                                                         │
-  │  ┌───────────────────┐     Outputs:                    │
+  │  ┌───────────────────┐     Outputs:                     │
   │  │ Business Analyst   │──→  • Problem Statement         │
   │  │ Agent              │     • Goals & Objectives        │
-  │  │                    │     • Target Users               │
+  │  │                    │     • Target Users              │
   │  │ Input: idea,       │     • User Personas (×2)        │
   │  │  users, domain,    │     • Key Pain Points           │
   │  │  constraints,      │     • Assumptions               │
   │  │  RAG context       │                                 │
-  │  └────────┬──────────┘                                 │
+  │  └────────┬──────────┘                                  │
   │           │ passes output ▼                             │
-  │  ┌───────────────────┐     Outputs:                    │
+  │  ┌───────────────────┐     Outputs:                     │ 
   │  │ Product Manager    │──→  • Proposed Solution         │
   │  │ Agent              │     • User Stories (6-10)       │
-  │  │                    │     • Functional Requirements    │
+  │  │                    │     • Functional Requirements   │
   │  │ Input: idea,       │     • Non-Functional Reqs       │
   │  │  BA output,        │     • Success Metrics           │
   │  │  RAG context       │     • MVP vs Future Scope       │
-  │  └────────┬──────────┘                                 │
+  │  └────────┬──────────┘                                  │
   │           │ passes output ▼                             │
-  │  ┌───────────────────┐     Outputs:                    │
+  │  ┌───────────────────┐     Outputs:                     │
   │  │ Risk Reviewer      │──→  • Risks & Mitigation        │
   │  │ Agent              │     • Ambiguities & Gaps        │
-  │  │                    │     • Missing Requirements       │
+  │  │                    │     • Missing Requirements      │
   │  │ Input: idea,       │     • Future Enhancements       │
   │  │  BA output,        │     • Clarifying Questions      │
   │  │  PM output,        │                                 │
   │  │  RAG context       │                                 │
-  │  └────────┬──────────┘                                 │
+  │  └────────┬──────────┘                                  │
   │           │ all outputs ▼                               │
-  │  ┌───────────────────┐                                 │
-  │  │ PRD Compiler       │──→  Final 12-section PRD       │
+  │  ┌───────────────────┐                                  │
+  │  │ PRD Compiler       │──→  Final 12-section PRD        │
   │  │ (Technical Writer) │     (merged, formatted,         │
   │  │                    │      with citations)            │
-  │  └───────────────────┘                                 │
+  │  └───────────────────┘                                  │
   │                                                         │
   └─────────────────────────────────────────────────────────┘
 ```
